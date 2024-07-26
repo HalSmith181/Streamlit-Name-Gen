@@ -30,22 +30,22 @@ st.button("Reset", type="primary")
 if st.button("Generate"):
 
     if type == "Elf":
+        st.divider()
         for i in range(name_qty):
-            st.divider()
             elf_random_start = elf_names_df['start'].sample(n = 1).values[0]
             elf_random_middle = elf_names_df['middle'].sample(n = 1).values[0]
             elf_random_end = elf_names_df['end'].sample(n = 1).values[0]
             st.write(f'{elf_random_start}{elf_random_middle}{elf_random_end}')
     elif type == "Goblin":
+        st.divider()
         for i in range(name_qty):
-            st.divider()
             gob_random_start = goblin_names_df['start'].sample(n = 1).values[0]
             gob_random_middle = goblin_names_df['middle'].sample(n = 1).values[0]
             gob_random_end = goblin_names_df['end'].sample(n = 1).values[0]
             st.write(f'{gob_random_start}{gob_random_middle}{gob_random_end}')
     elif type == "Dwarf":
+        st.divider()
         for i in range(name_qty):
-            st.divider()
             dwa_random_start = dwarf_names_df['start'].sample(n = 1).values[0]
             dwa_random_middle = dwarf_names_df['middle'].sample(n = 1).values[0]
             dwa_random_end = dwarf_names_df['end'].sample(n = 1).values[0]
