@@ -25,18 +25,21 @@ dwarf_names_df = pd.DataFrame({
 })
 
 type = st.radio("Choose a species:", ["Elf", "Dwarf", "Goblin"])
+st.divider
+st.button("Reset", type="primary")
+if st.button("Generate"):
 
-if type == "Elf":
-    for i in range(name_qty):
-        elf_random_start = elf_names_df['start'].sample(n = 1).values[0]
-        elf_random_middle = elf_names_df['middle'].sample(n = 1).values[0]
-        elf_random_end = elf_names_df['end'].sample(n = 1).values[0]
-        st.write(f'{elf_random_start}{elf_random_middle}{elf_random_end}')
-elif type == "Goblin":
-    for i in range(name_qty):
-        gob_random_start = goblin_names_df['start'].sample(n = 1).values[0]
-        gob_random_middle = goblin_names_df['middle'].sample(n = 1).values[0]
-        gob_random_end = goblin_names_df['end'].sample(n = 1).values[0]
-        st.write(f'{gob_random_start}{gob_random_middle}{gob_random_end}')
-else:
-    st.write("you chose Dwarf.")
+    if type == "Elf":
+        for i in range(name_qty):
+            elf_random_start = elf_names_df['start'].sample(n = 1).values[0]
+            elf_random_middle = elf_names_df['middle'].sample(n = 1).values[0]
+            elf_random_end = elf_names_df['end'].sample(n = 1).values[0]
+            st.write(f'{elf_random_start}{elf_random_middle}{elf_random_end}')
+    elif type == "Goblin":
+        for i in range(name_qty):
+            gob_random_start = goblin_names_df['start'].sample(n = 1).values[0]
+            gob_random_middle = goblin_names_df['middle'].sample(n = 1).values[0]
+            gob_random_end = goblin_names_df['end'].sample(n = 1).values[0]
+            st.write(f'{gob_random_start}{gob_random_middle}{gob_random_end}')
+    else:
+        st.write("you chose Dwarf.")
