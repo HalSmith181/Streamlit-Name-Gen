@@ -13,7 +13,7 @@ names_df = pd.DataFrame({
         })
 
 st.button("Reset", type="primary")
-if st.button("Generage Elf Names"):
+if st.button("Generate Elf Names"):
     st.divider()
     for i in range(name_qty):
         random_start = names_df['start'].sample(n = 1).values[0]
