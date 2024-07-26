@@ -24,7 +24,7 @@ dwarf_names_df = pd.DataFrame({
     'end': ['ap', 'boom', 'zzle', 'z', 'bang', 'stick', 'oop', 'snic', 'snack', 'zick', 'arr', 'squee', 'squick']
 })
 
-type = st.radio("Choose a species:" 'Elf', 'Dwarf', 'Goblin')
+type = st.radio("Choose a species:" ['Elf', 'Dwarf', 'Goblin'])
 
 if type = 'Elf':
     for i in range(name_qty):
