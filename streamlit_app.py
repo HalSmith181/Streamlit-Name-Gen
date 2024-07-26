@@ -21,7 +21,7 @@ goblin_names_df = pd.DataFrame({
 
 col_1, col_2 = st.columns(2)
 with col_1:
-    st.button("Reset", type="primary")
+    st.button("Reset", type="primary", key = "elf")
     if st.button("Generate Elf Names"):
         st.divider()
         for i in range(name_qty):
@@ -30,7 +30,7 @@ with col_1:
             elf_random_end = elf_names_df['end'].sample(n = 1).values[0]
             st.write(f'{elf_random_start}{elf_random_middle}{elf_random_end}')
 with col_2:
-    st.button("Reset", type= "primary")
+    st.button("Reset", type= "primary", key = "gob")
     if st.button("Generate Goblin Names"):
         st.divider()
         for i in range(name_qty):
