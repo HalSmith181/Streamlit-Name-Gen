@@ -2,11 +2,9 @@ import pandas as pd
 import streamlit as st
 
 
-
-name_qty = st.slider("Name Quantity:", 1, 20, 10)
-
 st.header("Fantasy Name Generator")
 st.divider()
+name_qty = st.slider("Name Quantity:", 1, 20, 10)
 
 elf_names_df = pd.DataFrame({
     'start': ['E', 'B', 'S', 'T', 'R', 'M', 'F', 'T', 'K', 'Ev', 'L', 'V', 'A', 'Av', 'D', 'Y'],
