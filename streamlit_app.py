@@ -19,7 +19,7 @@ goblin_names_df = pd.DataFrame({
 })
 
 
-col_1, col_2 = st.column(2)
+col_1, col_2 = st.columns(2)
 with col1:
     st.button("Reset", type="primary")
     if st.button("Generate Elf Names"):
