@@ -27,7 +27,7 @@ dwarf_names_df = pd.DataFrame({
 type = st.radio("Choose a species:", ["Elf", "Dwarf", "Goblin"])
 st.divider()
 st.button("Reset", type="primary")
-if st.button("Generate"):
+if st.button("Generate Names"):
 
     if type == "Elf":
         st.divider()
