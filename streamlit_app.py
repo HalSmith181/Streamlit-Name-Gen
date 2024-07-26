@@ -24,15 +24,15 @@ dwarf_names_df = pd.DataFrame({
     'end': ['ap', 'boom', 'zzle', 'z', 'bang', 'stick', 'oop', 'snic', 'snack', 'zick', 'arr', 'squee', 'squick']
 })
 
-type = st.radio("Choose a species:" ['Elf', 'Dwarf', 'Goblin'])
+type = st.radio("Choose a species:" ["Elf", "Dwarf", "Goblin"])
 
-if type == 'Elf':
+if type == "Elf":
     for i in range(name_qty):
         elf_random_start = elf_names_df['start'].sample(n = 1).values[0]
         elf_random_middle = elf_names_df['middle'].sample(n = 1).values[0]
         elf_random_end = elf_names_df['end'].sample(n = 1).values[0]
         st.write(f'{elf_random_start}{elf_random_middle}{elf_random_end}')
-elif type == 'Goblin':
+elif type == "Goblin":
     for i in range(name_qty):
         gob_random_start = goblin_names_df['start'].sample(n = 1).values[0]
         gob_random_middle = goblin_names_df['middle'].sample(n = 1).values[0]
