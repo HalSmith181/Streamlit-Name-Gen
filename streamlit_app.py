@@ -44,6 +44,7 @@ if st.button("Generate"):
             gob_random_end = goblin_names_df['end'].sample(n = 1).values[0]
             st.write(f'{gob_random_start}{gob_random_middle}{gob_random_end}')
     elif type == "Dwarf":
+        for i in range(name_qty):
             st.divider()
             dwa_random_start = dwarf_names_df['start'].sample(n = 1).values[0]
             dwa_random_middle = dwarf_names_df['middle'].sample(n = 1).values[0]
