@@ -18,24 +18,25 @@ goblin_names_df = pd.DataFrame({
     'end': ['ap', 'boom', 'zzle', 'z', 'bang', 'stick', 'oop', 'snic', 'snack', 'zick', 'arr', 'squee', 'squick']
 })
 
+dwarf_names_df = pd.DataFrame({
+    'start': ['S', 'R', 'S', 'G', 'Z', 'Y', 'T', 'B', 'N', 'Gr', 'Fr', 'Vr', 'Zz'],
+    'middle': ['kr', 'azz', 'chm', 'rizz', 'razz', 't', 'ok', 'wee', 'oo', 'reth', 'on', '', 'joob'],
+    'end': ['ap', 'boom', 'zzle', 'z', 'bang', 'stick', 'oop', 'snic', 'snack', 'zick', 'arr', 'squee', 'squick']
+})
 
-col_1, col_2 = st.columns(2)
-with col_1:
-    st.button("Reset", type="primary", key = "elf")
-    if st.button("Generate Elf Names"):
-        st.divider()
-        for i in range(name_qty):
-            elf_random_start = elf_names_df['start'].sample(n = 1).values[0]
-            elf_random_middle = elf_names_df['middle'].sample(n = 1).values[0]
-            elf_random_end = elf_names_df['end'].sample(n = 1).values[0]
-            st.write(f'{elf_random_start}{elf_random_middle}{elf_random_end}')
-with col_2:
-    st.button("Reset", type= "primary", key = "gob")
-    if st.button("Generate Goblin Names"):
-        st.divider()
-        for i in range(name_qty):
-            gob_random_start = goblin_names_df['start'].sample(n = 1).values[0]
-            gob_random_middle = goblin_names_df['middle'].sample(n = 1).values[0]
-            gob_random_end = goblin_names_df['end'].sample(n = 1).values[0]
-            st.write(f'{gob_random_start}{gob_random_middle}{gob_random_end}')
+type = st.radio(Choose a species: 'Elf', 'Dwarf', 'Goblin')
 
+if type = 'Elf':
+    for i in range(name_qty):
+        elf_random_start = elf_names_df['start'].sample(n = 1).values[0]
+        elf_random_middle = elf_names_df['middle'].sample(n = 1).values[0]
+        elf_random_end = elf_names_df['end'].sample(n = 1).values[0]
+        st.write(f'{elf_random_start}{elf_random_middle}{elf_random_end}')
+elif type = 'Goblin':
+    for i in range(name_qty):
+        gob_random_start = goblin_names_df['start'].sample(n = 1).values[0]
+        gob_random_middle = goblin_names_df['middle'].sample(n = 1).values[0]
+        gob_random_end = goblin_names_df['end'].sample(n = 1).values[0]
+        st.write(f'{gob_random_start}{gob_random_middle}{gob_random_end}')
+else:
+    st.write("you chose Dwarf.")
