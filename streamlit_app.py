@@ -19,9 +19,9 @@ goblin_names_df = pd.DataFrame({
 })
 
 dwarf_names_df = pd.DataFrame({
-    'start': ['R', 'Br', 'T', 'Tr', 'Th', 'Hr', 'Kr', 'K', 'N', 'Gr', 'Fr', 'Vr', 'Dr'],
-    'middle': ['ok', 'ak', 'or', 'as', 'us', 'ar', 'orn', 'yr', 'o', 'er', 'on', '', 'arn'],
-    'end': ['grim', 'nar', 'brok', 'gard', 'mer', 'li', 'and', 'bard', 'ric', 'dor', 'zad', 'agg', 'rek']
+    'start': ['R', 'Br', 'T', 'Tr', 'Th', 'Hr', 'Kr', 'K', 'N', 'Gr', 'Fr', 'Vr', 'Dr', 'D'],
+    'middle': ['ok', 'ak', 'or', 'as', 'us', 'ar', 'orn', 'yr', 'o', 'er', 'on', '', 'arn', 'a'],
+    'end': ['grim', 'nar', 'brok', 'gard', 'mer', 'li', 'and', 'bard', 'ric', 'dor', 'zad', 'agg', 'rek', 'tak']
 })
 
 type = st.radio("Choose a species:", ["Elf", "Dwarf", "Goblin"])
