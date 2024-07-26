@@ -3,7 +3,7 @@ import streamlit as st
 
 
 
-name_qty = st.slider("Name Quantity:" 1, 20, 10)
+name_qty = st.slider("Name Quantity:", 1, 20, 10)
 
 
 names_df = pd.DataFrame({
