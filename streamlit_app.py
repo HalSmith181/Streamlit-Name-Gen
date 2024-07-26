@@ -13,8 +13,8 @@ elf_names_df = pd.DataFrame({
         })
 
 goblin_names_df = pd.DataFrame({
-    'start': ['S', 'R', 'S', 'G', 'Z', 'Y', 'T', 'B', 'N', 'Gr', 'Fr', 'Vr', 'Zz']
-    'Middle': ['kr', 'azz', 'chm', 'rizz', 'razz', 't', 'ok', 'wee', 'oo', 'reth', 'on', '', 'joob']
+    'start': ['S', 'R', 'S', 'G', 'Z', 'Y', 'T', 'B', 'N', 'Gr', 'Fr', 'Vr', 'Zz'],
+    'Middle': ['kr', 'azz', 'chm', 'rizz', 'razz', 't', 'ok', 'wee', 'oo', 'reth', 'on', '', 'joob'],
     'end': ['ap', 'boom', 'zzle', 'z', 'bang', 'stick', 'oop', 'snick', 'snack', 'zick', 'arr', 'squee', 'squick']
 })
 
